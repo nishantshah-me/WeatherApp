@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/seaContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing="@dimen/subtitleltrSpace"
+            android:text="@string/weatherAtSea"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/seaLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap5"
+            android:gravity="start|center_vertical"
+            android:text=""
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/peipsiContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap5"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing="@dimen/subtitleltrSpace"
+            android:text="@string/weatherAtPeipsi"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/peipsiLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap5"
+            android:gravity="start|center_vertical"
+            android:text=""
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

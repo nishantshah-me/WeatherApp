@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:elevation="2dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="@string/settings" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:padding="@dimen/gap20">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="@dimen/subtitleltrSpace"
+                android:text="@string/General"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                app:textAllCaps="true" />
+
+            <LinearLayout
+                android:id="@+id/languageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap20"
+                android:orientation="vertical"
+                android:padding="@dimen/gap5">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="@dimen/subtitleltrSpace"
+                    android:text="@string/language"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    android:id="@+id/selectedLocale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="@dimen/subtitleltrSpace"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>
